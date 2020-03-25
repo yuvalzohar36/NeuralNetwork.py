@@ -143,20 +143,8 @@ class NueralNetwork:
 		self.bias_h.plus(hidden_gradient)
 
 def main():
-	input_data = [[0,0],[0,1],[1,0],[1,1]]
-	target_data = [[0],[1],[1],[0]]
-	nn = NueralNetwork(2,4,1)
-	for i in range(30000):
-			for i in range(4):
-			#j = random.randint(0, 3)
-				nn.train(input_data[i],target_data[i])
-			#Adjust the learning Rate
-			#Change to Random choose
-			#More loops 
-	print(nn.feedForward([0,0]))
-	print(nn.feedForward([0,1]))
-	print(nn.feedForward([1,0]))
-	print(nn.feedForward([1,1]))
-
+	#Make an input data && target data
+	#train it .
+	#feed forward for testing it.
 if __name__ == '__main__':
 	main()
